@@ -1,1 +1,2 @@
-#!interpreter
+#!/bin/bash
+pwd
