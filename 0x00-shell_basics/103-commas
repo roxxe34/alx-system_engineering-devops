@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1  sed 's/\(.*\)\//\1\//g'  grep -v '^\.+$' sort -k1.1d -k1.1n tr '\n' ','; echo
+ls -a1  sed 's/\(.*\)\//\1\//g'  grep -v '^\.+$' sort -k1.1d -k1.1n tr '\n' ','
