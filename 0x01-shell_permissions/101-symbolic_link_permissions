@@ -1,0 +1,2 @@
+#!/bin/bash
+chmod --no-dereference vincent:staff _hello
