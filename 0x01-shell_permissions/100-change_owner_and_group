@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chgrp staff chawn staff
+sudo chawn staff chgrp vincent
