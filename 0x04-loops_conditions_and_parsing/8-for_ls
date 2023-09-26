@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# cut ls print
+
+list=$(ls)
+
+for file in $list
+do
+    find $file | cut -d- -f2
+done
