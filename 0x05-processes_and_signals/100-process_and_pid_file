@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+## Function to clean up and exit gracefully
 cleanup() {
     echo "Deleting PID file and terminating."
     rm -f /var/run/myscript.pid
