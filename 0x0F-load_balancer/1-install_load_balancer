@@ -2,8 +2,10 @@
 # Set the new load balancing algorithm
 # Update the HAProxy configuration with the new settings
 # Restart HAProxy using the service comma
+apt-get install -y software-properties-common
+add-apt-repository -y ppa:vbernat/haproxy-1.8
 apt-get update
-apt install haproxy
+apt-get install -y haproxy=1.8.\*
 
 echo "ENABLED=1" >> /etc/default/haproxy
 mv /etc/haproxy/haproxy.cfg{,.original}
