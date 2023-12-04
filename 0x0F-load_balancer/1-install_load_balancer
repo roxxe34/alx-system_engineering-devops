@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Set the new load balancing algorithm
 # Update the HAProxy configuration with the new settings
-# Restart HAProxy using the service command
+# Restart HAProxy using the service comma
 apt-get update
 apt install haproxy
 
