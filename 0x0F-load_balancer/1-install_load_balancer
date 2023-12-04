@@ -37,4 +37,4 @@ listen hbnb
     server 375-web-01 52.91.151.130:80 check
     server 375-web-02 54.242.169.1:80 check
 " >> /etc/haproxy/haproxy.cfg
-service haproxy restart
+service haproxy start
