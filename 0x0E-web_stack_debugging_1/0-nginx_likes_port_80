@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Installs nginx on a server:
-sudo apt-get update
-sudo apt-get install nginx
-sudo service nginx start
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
