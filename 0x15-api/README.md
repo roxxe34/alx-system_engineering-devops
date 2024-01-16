@@ -1,36 +1,34 @@
-# Project: 0x15. API
+# API
 
-## Resources
+This project was further practice in working with API's. I collected data from the
+[JSONPlaceholder REST API](https://jsonplaceholder.typicode.com/), and learned how
+to export it to either CSV or JSON format.
 
-#### Read or watch:
+## Tasks :page_with_curl:
 
-* [Friends don't let friends program in shell script](https://intranet.alxswe.com/rltoken/KMFzqRAqedMf7AHHBD_43g)
-* [What is an API](https://intranet.alxswe.com/rltoken/zeBO6_RNTlwaotyRRNAzoQ)
-* [What is an API? In English, please](https://intranet.alxswe.com/rltoken/bf09Qp6QY44CANLzxxRbPA)
-* [What is a REST API](https://intranet.alxswe.com/rltoken/fA164QWEnZxaSngBD3EPRQ)
-* [What are microservices](https://intranet.alxswe.com/rltoken/n4h77IbBuDxTE3bhes_AyQ)
-* [PEP8 Python style - having a clean code respecting style guide is really appreciated in the industry](https://intranet.alxswe.com/rltoken/b7V1ROY6kSRxDDKnsJoqxg)
-## Learning Objectives
+* **0. Gather data from an API**
+  * [0-gather_data_from_an_API.py](./0-gather_data_from_an_API.py): Python script
+  that returns information on the to-do list progress of a given employee ID.
+  * Usage: `python3 0-gather_data_from_an_API.py <employee ID>`.
+  * Output: `Employee <employee name> is done with tasks(<# completed tasks>/<total # tasks>):`
 
-### General
+* **1. Export to CSV**
+  * [1-export_to_CSV.py](./1-export_to_CSV.py): Python script exports to-do list
+  information of a given employee ID to CSV format.
+  * Usage: `python3 1-export_to_CSV.py <employee ID>`
+  * File name: `<user id>.csv`.
+  * Format: `"<user id>","<username>","<task completed status>","<task title>"`.
 
-* What Bash scripting should not be used for
-* What is an API
-* What is a REST API
-* What are microservices
-* What is the CSV format
-* What is the JSON format
-* Pythonic Package and module name style
-* Pythonic Class name style
-* Pythonic Variable name style
-* Pythonic Function name style
-* Pythonic Constant name style
-* Significance of CapWords or CamelCase in Python
-## Tasks
+* **2. Export to JSON**
+  * [2-export_to_JSON.py](./2-export_to_JSON.py): Python script that exports
+  to-do list information of a given employee ID to JSON format.
+  * Usage: `python3 2-export_to_JSON.py <employee ID>`
+  * File name: `<user id>.json`
+  * Format: `{ "<user id>": [ {"task": "<task title>", "completed": <task completed status>, "username": "<username>"}}, ... ]}`
 
-| Task | File |
-| ---- | ---- |
-| 0. Gather data from an API | [0-gather_data_from_an_API.py](./0-gather_data_from_an_API.py) |
-| 1. Export to CSV | [1-export_to_CSV.py](./1-export_to_CSV.py) |
-| 2. Export to JSON | [2-export_to_JSON.py](./2-export_to_JSON.py) |
-| 3. Dictionary of list of dictionaries | [3-dictionary_of_list_of_dictionaries.py](./3-dictionary_of_list_of_dictionaries.py) |
+* **3. Dictionary of list of dictionaries**
+  * [3-dictionary_of_list_of_dictionaries.py](./3-dictionary_of_list_of_dictionaries.py):
+  Python script that exports to-do list information for all employees to JSON format.
+  * Usage: `python3 3-dictionary_of_list_of_dictionaries.py`
+  * File name: `todo_all_employees.json`
+  * Format: `{ "<user id>": [ {"username": "<username>", "task": "<task title>", "completed": <task completed status>}, {"username": "<username>", "task": "<task title>", "completed": <task completed status>}, ... ], "<user id>": [ {"username": "<username>", "task": "<task title>", "completed": <task completed status>}, {"username": "<username>", "task": "<task title>", "completed": <task completed status>}, ... ]}`
