@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """function that queries the Reddit API and returns titles of
 the first 10 hot posts"""
-import sys
 
 import requests
 
